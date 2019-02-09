@@ -22,15 +22,15 @@ class FirstViewController: UIViewController {
     }
     
     func updateIndicator(with percent: Double, isAnimated: Bool = false){
-        let animation = CABasicAnimation(keyPath: "strokeStart")
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = progressShape.strokeStart
         animation.toValue = percent / 100.0
         animation.duration = 2.5
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut);
         
-        let shortestSide = min(view.frame.size.width - 75, view.frame.size.height - 75)
+        let shortestSide = min(view.frame.size.width - 90, view.frame.size.height - 90)
         let strokeWidth: CGFloat = 60.0
-        let frame = CGRect(x: 0, y: -40, width: shortestSide - strokeWidth, height: shortestSide - strokeWidth)
+        let frame = CGRect(x: 0, y: -135, width: shortestSide - strokeWidth, height: shortestSide - strokeWidth)
         
         backgroundShape.frame = frame
         backgroundShape.position = view.center
