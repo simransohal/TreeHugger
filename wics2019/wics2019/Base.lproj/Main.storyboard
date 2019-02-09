@@ -195,7 +195,7 @@
         <!--Fourth-->
         <scene sceneID="ERk-m7-yaz">
             <objects>
-                <viewController id="Lk2-ud-eka" userLabel="Fourth" sceneMemberID="viewController">
+                <viewController id="Lk2-ud-eka" userLabel="Fourth" customClass="SocialViewController" customModule="wics2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5R-ol-q4i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,15 +208,58 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-Jx-l5u">
+                                <rect key="frame" x="20" y="73" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Following"/>
+                                    <segment title="Groups"/>
+                                </segments>
+                                <connections>
+                                    <action selector="commSwitch:" destination="Lk2-ud-eka" eventType="valueChanged" id="np1-DN-KDr"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check out what your friends are up to!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4X-fG-mL0">
+                                <rect key="frame" x="20" y="113" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xwZ-R4-5WR">
+                                <rect key="frame" x="20" y="151" width="374" height="679"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-ra-v6s">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="254"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUu-ml-S3P">
+                                        <rect key="frame" x="0.0" y="251" width="374" height="254"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRn-k9-rbc">
+                                        <rect key="frame" x="0.0" y="498" width="374" height="254"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="puP-X5-Z9g"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="rgh-Ae-Ph4"/>
+                    <connections>
+                        <outlet property="CommunityScroll" destination="xwZ-R4-5WR" id="fa2-Kd-YXs"/>
+                        <outlet property="firstImage" destination="fk9-ra-v6s" id="yoE-R3-QpP"/>
+                        <outlet property="secondImage" destination="MUu-ml-S3P" id="7DC-Eb-hAj"/>
+                        <outlet property="thirdImage" destination="MRn-k9-rbc" id="zft-N3-t8e"/>
+                        <outlet property="topBarTextCommunity" destination="P4X-fG-mL0" id="9X4-fp-cbp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGK-G3-65M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="877"/>
+            <point key="canvasLocation" x="688.40579710144937" y="876.5625"/>
         </scene>
         <!--Fifth-->
         <scene sceneID="rES-b3-lWZ">
