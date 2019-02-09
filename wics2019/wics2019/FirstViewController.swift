@@ -13,11 +13,12 @@ class FirstViewController: UIViewController {
     let progressShape = CAShapeLayer()
     let backgroundShape = CAShapeLayer()
     let percent = 73.0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.addSublayer(backgroundShape)
         view.layer.addSublayer(progressShape)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
