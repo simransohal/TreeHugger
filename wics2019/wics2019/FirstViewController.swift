@@ -82,11 +82,11 @@ class FirstViewController: UIViewController {
         super.viewWillLayoutSubviews()
         updateIndicator(with: progressShape, backgroundShape: backgroundShape, percent: 73.0, isAnimated: true, strokewidth: 60.0, size: 90.0, xval: 0.0, yval: -135.0, red: 0.48, green: 0.61, blue: 0.29, alpha: 1.0)
         
-        updateIndicator(with: progressShape1, backgroundShape: backgroundShape1, percent: 20.0, isAnimated: true, strokewidth: 25.0, size: 180.0, xval: -90, yval: 170, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
+        updateIndicator(with: progressShape1, backgroundShape: backgroundShape1, percent: 20.0, isAnimated: true, strokewidth: 20.0, size: 180.0, xval: -90, yval: 170, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
         
-        updateIndicator(with: progressShape2, backgroundShape: backgroundShape2, percent: 45.0, isAnimated: true, strokewidth: 25.0, size: 180.0, xval: 90, yval: 170, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
+        updateIndicator(with: progressShape2, backgroundShape: backgroundShape2, percent: 45.0, isAnimated: true, strokewidth: 20.0, size: 180.0, xval: 90, yval: 170, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
         
-        updateIndicator(with: progressShape3, backgroundShape: backgroundShape3, percent: 85.0, isAnimated: true, strokewidth: 25.0, size: 180.0, xval: 0, yval: 280, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
+        updateIndicator(with: progressShape3, backgroundShape: backgroundShape3, percent: 85.0, isAnimated: true, strokewidth: 20.0, size: 180.0, xval: 0, yval: 280, red: 0.71, green: 0.78, blue: 0.54, alpha: 1.0)
         
     }
     
