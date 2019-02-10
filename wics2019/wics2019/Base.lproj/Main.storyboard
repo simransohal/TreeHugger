@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="wics2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                                 <size key="shadowOffset" width="-2" height="3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjl-43-wYj">
-                                <rect key="frame" x="170" y="242" width="75" height="132"/>
+                                <rect key="frame" x="170" y="255" width="75" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="100"/>
                                 <nil key="textColor"/>
@@ -102,13 +102,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="home" image="Webp.net-resizeimage" landscapeImage="Webp.net-resizeimage" largeContentSizeImage="Webp.net-resizeimage" selectedImage="Webp.net-resizeimage" springLoaded="YES" id="acW-dT-cKf">
+                        <color key="badgeColor" red="0.4823529412" green="0.60784313729999995" blue="0.2901960784" alpha="0.5977632705" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
-        <!--Second-->
+        <!--challenges-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="wics2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,7 +141,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="challenges" image="goalIcon" landscapeImage="goalIcon" largeContentSizeImage="goalIcon" selectedImage="goalIcon" id="cPa-gy-q4n">
+                        <color key="badgeColor" red="0.4823529412" green="0.60784313729999995" blue="0.2901960784" alpha="0.78684182359999999" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,10 +153,12 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="8" bottom="2" trailing="8"/>
+                        <color key="tintColor" red="0.4823529412" green="0.60784313729999995" blue="0.2901960784" alpha="0.5977632705" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.4823529412" green="0.60784313729999995" blue="0.2901960784" alpha="0.5977632705" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -186,7 +192,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9w6-Qa-rbg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KI4-Kf-9DJ"/>
+                    <tabBarItem key="tabBarItem" title="rewards" image="rewards" landscapeImage="rewards" largeContentSizeImage="rewards" badgeValue="2" selectedImage="rewards" id="KI4-Kf-9DJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggv-MW-6pG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,7 +254,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="puP-X5-Z9g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rgh-Ae-Ph4"/>
+                    <tabBarItem key="tabBarItem" title="social" image="social" landscapeImage="social" largeContentSizeImage="social" badgeValue="1" selectedImage="social" id="rgh-Ae-Ph4"/>
                     <connections>
                         <outlet property="CommunityScroll" destination="xwZ-R4-5WR" id="fa2-Kd-YXs"/>
                         <outlet property="firstImage" destination="fk9-ra-v6s" id="yoE-R3-QpP"/>
@@ -281,7 +287,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XQh-gK-40g"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8wY-N5-Pzt"/>
+                    <tabBarItem key="tabBarItem" title="education" image="education" landscapeImage="education" largeContentSizeImage="education" id="8wY-N5-Pzt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clS-FR-puL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +295,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Webp.net-resizeimage" width="18.75" height="18.75"/>
+        <image name="education" width="18.75" height="18.75"/>
+        <image name="goalIcon" width="18.75" height="18.75"/>
+        <image name="rewards" width="18.75" height="18.75"/>
+        <image name="social" width="18.75" height="18.75"/>
     </resources>
+    <color key="tintColor" red="0.4823529412" green="0.60784313729999995" blue="0.2901960784" alpha="0.78684182359999999" colorSpace="calibratedRGB"/>
 </document>
