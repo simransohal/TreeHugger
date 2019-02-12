@@ -175,7 +175,7 @@
         <!--Fourth View-->
         <scene sceneID="umr-Va-HKg">
             <objects>
-                <viewController id="lfx-6X-F4t" userLabel="Fourth View" sceneMemberID="viewController">
+                <viewController id="lfx-6X-F4t" userLabel="Fourth View" customClass="RewardsViewController" customModule="wics2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdk-v3-Stt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,15 +188,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f93-kl-PQL">
+                                <rect key="frame" x="20" y="55" width="374" height="758"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9w6-Qa-rbg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="rewards" image="rewards" landscapeImage="rewards" largeContentSizeImage="rewards" badgeValue="2" selectedImage="rewards" id="KI4-Kf-9DJ"/>
+                    <connections>
+                        <outlet property="RewardsImages" destination="f93-kl-PQL" id="joW-09-hTC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggv-MW-6pG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-977" y="770"/>
+            <point key="canvasLocation" x="-978.26086956521749" y="769.41964285714278"/>
         </scene>
         <!--Fourth-->
         <scene sceneID="ERk-m7-yaz">
@@ -270,7 +277,7 @@
         <!--Fifth-->
         <scene sceneID="rES-b3-lWZ">
             <objects>
-                <viewController id="zkU-d8-uu4" userLabel="Fifth" sceneMemberID="viewController">
+                <viewController id="zkU-d8-uu4" userLabel="Fifth" customClass="EducationViewController" customModule="wics2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fzA-wN-ekq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,15 +290,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-1T-sGQ">
+                                <rect key="frame" x="20" y="131" width="374" height="708"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cED-DD-U7W">
+                                <rect key="frame" x="20" y="53" width="374" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XQh-gK-40g"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="education" image="education" landscapeImage="education" largeContentSizeImage="education" id="8wY-N5-Pzt"/>
+                    <connections>
+                        <outlet property="EducationTitleImage" destination="cED-DD-U7W" id="NQV-fe-ghF"/>
+                        <outlet property="EducationView" destination="LS6-1T-sGQ" id="29R-Hf-AcL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clS-FR-puL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="770"/>
+            <point key="canvasLocation" x="2739.130434782609" y="769.41964285714278"/>
         </scene>
     </scenes>
     <resources>

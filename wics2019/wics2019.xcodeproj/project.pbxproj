@@ -14,6 +14,8 @@
 		6E417A8D220F43AB007D847C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E417A8C220F43AB007D847C /* Assets.xcassets */; };
 		6E417A90220F43AB007D847C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E417A8E220F43AB007D847C /* LaunchScreen.storyboard */; };
 		6E417A9B220F43AB007D847C /* wics2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E417A9A220F43AB007D847C /* wics2019Tests.swift */; };
+		840B3096220FB14F0057184B /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B3095220FB14F0057184B /* EducationViewController.swift */; };
+		840B3098220FB4770057184B /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B3097220FB4770057184B /* RewardsViewController.swift */; };
 		844FF1A8220F8E5100F0054E /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FF1A7220F8E5100F0054E /* SocialViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		6E417A96220F43AB007D847C /* wics2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wics2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E417A9A220F43AB007D847C /* wics2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wics2019Tests.swift; sourceTree = "<group>"; };
 		6E417A9C220F43AB007D847C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840B3095220FB14F0057184B /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		840B3097220FB4770057184B /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		844FF1A7220F8E5100F0054E /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,8 @@
 				6E417A87220F43A9007D847C /* SecondViewController.swift */,
 				844FF1A7220F8E5100F0054E /* SocialViewController.swift */,
 				6E417A89220F43A9007D847C /* Main.storyboard */,
+				840B3097220FB4770057184B /* RewardsViewController.swift */,
+				840B3095220FB14F0057184B /* EducationViewController.swift */,
 				6E417A8C220F43AB007D847C /* Assets.xcassets */,
 				6E417A8E220F43AB007D847C /* LaunchScreen.storyboard */,
 				6E417A91220F43AB007D847C /* Info.plist */,
@@ -206,6 +212,8 @@
 				6E417A88220F43A9007D847C /* SecondViewController.swift in Sources */,
 				6E417A84220F43A9007D847C /* AppDelegate.swift in Sources */,
 				6E417A86220F43A9007D847C /* FirstViewController.swift in Sources */,
+				840B3098220FB4770057184B /* RewardsViewController.swift in Sources */,
+				840B3096220FB14F0057184B /* EducationViewController.swift in Sources */,
 				844FF1A8220F8E5100F0054E /* SocialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
